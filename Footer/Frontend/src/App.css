@@ -1,0 +1,28 @@
+/* Footer.css */
+.footer {
+  background-color: #333;
+  color: white;
+  padding-top: 50px;
+}
+
+.footer .form-control {
+  background-color: #555;
+  border: none;
+  color: white;
+}
+
+.footer .btn-warning {
+  background-color: #f0ad4e;
+  color: black;
+  font-weight: bold;
+}
+
+.footer .list-inline-item a {
+  color: #f0ad4e;
+  text-decoration: none;
+}
+
+.footer hr {
+  background-color: #f0ad4e;
+  width: 75%;
+}

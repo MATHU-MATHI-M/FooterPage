@@ -1,0 +1,149 @@
+.footer {
+  background-color: #313131;
+  color: rgb(255, 255, 255);
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden; /* Ensures that shapes don't overflow outside the footer */
+  z-index: 0; /* Ensures that the footer is below other content */
+}
+
+.footer h5 {
+  color: #cac5cf;
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #adf9fc;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer .list-inline-item a {
+  color: #5a3175;
+  text-decoration: none;
+}
+
+.footer .list-inline-item a:hover {
+  text-decoration: underline;
+}
+
+.footer hr {
+  background-color: #f0ad4e;
+  height: 1px;
+  border: none;
+}
+
+.footer p {
+  margin-top: 20px;
+}
+
+/* Form styling */
+.message-form .form-control {
+  margin-bottom: 15px;
+}
+
+.message-form .btn {
+  background-color: #33353a;
+  color: white;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+/* Social Links Styling */
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin-right: 10px;
+  color: #0858ec;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #3c1077;
+}
+
+/* Background Animation */
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/home/mathu/Desktop/footer/freelance-platform/src/What-is-Freelancing.jpg') no-repeat center center/cover;
+  opacity: 0.15;
+  z-index: -1; /* Ensure the background is behind the shapes and content */
+}
+
+/* Shape styling and animation */
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.4;
+  z-index: -1; /* Ensure shapes are behind the footer content */
+  animation: moveShape 20s infinite ease-in-out;
+}
+
+/* Basic Shapes */
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 135, 135, 0.5);
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: #f0ad4e;
+}
+
+.rectangle {
+  width: 50px;
+  height: 25px;
+  background-color: #3e4146;
+  border-radius: 10px; /* Rounded corners for rectangle */
+}
+
+.diamond {
+  width: 50px;
+  height: 50px;
+  background-color: #ff8c00;
+  transform: rotate(45deg);
+}
+
+/* Positioning of shapes within the footer */
+.shape:nth-child(1) { top: 10%; left: 10%; }
+.shape:nth-child(2) { top: 10%; right: 10%; }
+.shape:nth-child(3) { bottom: 10%; left: 10%; }
+.shape:nth-child(4) { bottom: 10%; right: 10%; }
+
+/* Shape Animations */
+@keyframes moveShape {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(15px, 15px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
